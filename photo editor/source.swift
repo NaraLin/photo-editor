@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+struct source{
+    var title:String
+    var photoSource:UIImagePickerController.SourceType
+}

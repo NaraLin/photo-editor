@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		49AE9F142BF631CE0081F2EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE9F132BF631CE0081F2EC /* AppDelegate.swift */; };
 		49AE9F162BF631CE0081F2EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE9F152BF631CE0081F2EC /* SceneDelegate.swift */; };
-		49AE9F182BF631CE0081F2EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE9F172BF631CE0081F2EC /* ViewController.swift */; };
 		49AE9F1B2BF631CE0081F2EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AE9F192BF631CE0081F2EC /* Main.storyboard */; };
 		49AE9F1D2BF631D80081F2EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AE9F1C2BF631D80081F2EC /* Assets.xcassets */; };
 		49AE9F202BF631D80081F2EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AE9F1E2BF631D80081F2EC /* LaunchScreen.storyboard */; };
+		49AE9F282BF644B80081F2EC /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE9F272BF644B80081F2EC /* mainViewController.swift */; };
+		49AE9F2A2BF644CB0081F2EC /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE9F292BF644CA0081F2EC /* EditViewController.swift */; };
+		49AE9F2C2BF6F3AF0081F2EC /* source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE9F2B2BF6F3AF0081F2EC /* source.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49AE9F102BF631CE0081F2EC /* photo editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "photo editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AE9F132BF631CE0081F2EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49AE9F152BF631CE0081F2EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		49AE9F172BF631CE0081F2EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49AE9F1A2BF631CE0081F2EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49AE9F1C2BF631D80081F2EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49AE9F1F2BF631D80081F2EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49AE9F212BF631D80081F2EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49AE9F272BF644B80081F2EC /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		49AE9F292BF644CA0081F2EC /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		49AE9F2B2BF6F3AF0081F2EC /* source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = source.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 			children = (
 				49AE9F132BF631CE0081F2EC /* AppDelegate.swift */,
 				49AE9F152BF631CE0081F2EC /* SceneDelegate.swift */,
-				49AE9F172BF631CE0081F2EC /* ViewController.swift */,
 				49AE9F192BF631CE0081F2EC /* Main.storyboard */,
+				49AE9F272BF644B80081F2EC /* mainViewController.swift */,
+				49AE9F2B2BF6F3AF0081F2EC /* source.swift */,
+				49AE9F292BF644CA0081F2EC /* EditViewController.swift */,
 				49AE9F1C2BF631D80081F2EC /* Assets.xcassets */,
 				49AE9F1E2BF631D80081F2EC /* LaunchScreen.storyboard */,
 				49AE9F212BF631D80081F2EC /* Info.plist */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49AE9F182BF631CE0081F2EC /* ViewController.swift in Sources */,
 				49AE9F142BF631CE0081F2EC /* AppDelegate.swift in Sources */,
 				49AE9F162BF631CE0081F2EC /* SceneDelegate.swift in Sources */,
+				49AE9F2A2BF644CB0081F2EC /* EditViewController.swift in Sources */,
+				49AE9F282BF644B80081F2EC /* mainViewController.swift in Sources */,
+				49AE9F2C2BF6F3AF0081F2EC /* source.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +300,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H9287UZN4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "photo editor/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "是否同意將照片存到相簿？";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,8 +329,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H9287UZN4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "photo editor/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "是否同意將照片存到相簿？";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
